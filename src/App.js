@@ -38,7 +38,6 @@ function App() {
             <Route path="/" element={<HomePage></HomePage>}></Route>
             <Route path="/sign-up" element={<SignUpPage></SignUpPage>}></Route>
             <Route path="/sign-in" element={<SignInPage></SignInPage>}></Route>
-
             <Route path="*" element={<PageNotFound></PageNotFound>}></Route>
             <Route
               path="/category/:slug"
@@ -53,9 +52,8 @@ function App() {
                 path="/dashboard"
                 element={<DashboardPage></DashboardPage>}
               ></Route>
-
             <Route
-                path="/manage/post"
+                path="post"
                 element={<PostManage></PostManage>}
               ></Route>
               <Route
@@ -94,7 +92,7 @@ function App() {
                 path="/profile"
                 element={<UserProfile></UserProfile>}
               ></Route>
-              </Route>
+            </Route>
           </Routes>
         </Suspense>
       </AuthProvider>
